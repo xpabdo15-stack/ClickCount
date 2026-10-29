@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .counter-card {
+    width: 100%;
+    max-width: 380px;
+    padding: 30px 25px;
+    text-align: center;
+    background: #111c30;
+    border: 1px solid #334155;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px #0005;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .counter-box {
+    padding: 25px 15px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    margin-bottom: 25px;
+  }
+  
+  .label {
+    color: #cbd5e1;
+    font-size: 15px;
+  }
+  
+  #count {
+    font-size: 65px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin: 15px 0;
+    transition: transform 0.15s ease;
+    overflow-wrap: anywhere;
+  }
+  
+  .total {
+    font-size: 11px;
+    color: #64748b;
+    letter-spacing: 3px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  button {
+    flex: 1;
+    padding: 14px 10px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .increase-btn {
+    background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  }
+  
+  .reset-btn {
+    background: #334155;
+    border: 1px solid #475569;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.15);
+  }
+  
+  button:active {
+    transform: scale(0.96);
+  }
+  
+  .pop {
+    transform: scale(1.15);
+  }
+  
+  .footer {
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 25px;
+    direction: ltr;
+  }
+  
+  @media (max-width: 350px) {
+    .counter-card {
+      padding: 22px 15px;
+    }
+  
+    #count {
+      font-size: 50px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  
